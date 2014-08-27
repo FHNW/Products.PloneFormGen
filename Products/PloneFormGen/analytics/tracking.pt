@@ -5,7 +5,7 @@
     /*&lt;![CDATA[*/
     // TODO: Del this
     //_gaq.push(['_trackPageview', '${view/relative_url}/${form_status}']);
-    ga('send', 'pageview', '${view/relative_url}/${form_status}']);
+    ga('send', 'pageview', '${view/relative_url}/${form_status}');
     /*]]&gt;*/
 ">
 </script>
