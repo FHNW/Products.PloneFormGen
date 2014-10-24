@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.7b5\n"
-"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"POT-Creation-Date: 2014-02-27 07:52+0000\n"
 "PO-Revision-Date: 2011-10-20 12:25+0100\n"
 "Last-Translator: Ariel von Barnekow <ariel.von.barnekow@upcnet.es>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
@@ -24,25 +24,36 @@ msgstr ""
 msgid "A Likert form entry"
 msgstr "Una entrada de formulari de satisfacció"
 
+#. Default: "A captcha field to prevent spam."
 #: ./profiles/default/types/FormCaptchaField.xml
-msgid "A captcha field to prevent spam."
-msgstr ""
+msgid "A captcha field to prevent spam"
+msgstr "Un camp captcha per evitar correus no desitjats."
 
+#. Default: "A folder which can contain form fields."
 #: ./profiles/default/types/FormFolder.xml
-msgid "A folder which can contain form fields."
-msgstr ""
+msgid "A folder which can contain form fields"
+msgstr "Una carpeta que pot contenir camps de formulari."
 
 #: ./profiles/default/types/FieldsetFolder.xml
 msgid "A folder which groups form fields as a fieldset."
 msgstr "Una carpeta amb grups d'elements de formulari com a conjunt de camps."
 
+#. Default: "A form action adapter that will e-mail form input."
 #: ./profiles/default/types/FormMailerAdapter.xml
-msgid "A form action adapter that will e-mail form input."
-msgstr ""
+msgid "A form action adapter that will e-mail form input"
+msgstr "Un adaptador d'acció per formularis que envia l'entrada per correu electrònic."
 
-#: ./profiles/default/types/FormLinesField.xml
-msgid "A line entry field. This appears as a textarea without wordwrap."
+#. Default: "A form action adapter that will save form input data and\n         return it in csv- or tab-delimited format."
+#: ./profiles/default/types/FormSaveDataAdapter.xml
+msgid "A form action adapter that will save form input data and return it in csv- or tab-delimited format"
 msgstr ""
+"Un adaptador d'acció per formularis que desa les dades d'entrada i\n"
+" les retorna en format CSV o delimitat per tabuladors."
+
+#. Default: "A line entry field. This appears as a textarea without wordwrap."
+#: ./profiles/default/types/FormLinesField.xml
+msgid "A line entry field. This appears as a textarea without wordwrap"
+msgstr "Camp d'entrada d'una línia. Apareix com una àrea de text sense separació de paraules."
 
 #. Default: "A string entry field"
 #: ./profiles/default/types/FormStringField.xml
@@ -76,23 +87,25 @@ msgstr "Camp booleà (casella de selecció)"
 msgid "Captcha Field"
 msgstr "Camp de Captcha"
 
+#. Default: "Checkbox Field"
 #: ./profiles/default/types/FormBooleanField.xml
-msgid "Checkbox Field"
-msgstr ""
+msgid "Checkbox"
+msgstr "Camp de Caselles de selecció"
 
 #. Default: "Custom Script Adapter"
 #: ./profiles/default/types/FormCustomScriptAdapter.xml
 msgid "Custom Script Adapter"
 msgstr "Adaptador de Script personalitzat."
 
+#. Default: "Date/Time Field"
+#: ./profiles/default/types/FormDateField.xml
+msgid "Date/Time"
+msgstr "Camp de Data/Hora"
+
 #. Default: "Date/Time Entry Field"
 #: ./profiles/default/types/FormDateField.xml
 msgid "Date/Time Entry Field"
 msgstr "Camp de Data/Hora"
-
-#: ./profiles/default/types/FormDateField.xml
-msgid "Date/Time Field"
-msgstr ""
 
 #. Default: "Decimal Number Field"
 #: ./profiles/default/types/FormFixedPointField.xml
@@ -306,10 +319,6 @@ msgstr "Caixa d'eines <span> <img alt=\"Ajax Loader\" style=\"visibility:hidden\
 msgid "Upload"
 msgstr "Carregar"
 
-#: ./tools/formGenTool.py:60
-msgid "Validation failed: $id"
-msgstr ""
-
 #. Default: "Whole Number Field"
 #: ./profiles/default/types/FormIntegerField.xml
 msgid "Whole Number Field"
@@ -363,41 +372,6 @@ msgstr ""
 "Marca això com valor per afegir a la\n"
 " petició de formulari per utilitzar als adaptadors d'accions i\n"
 " que no sigui modificable o visible pel client."
-
-#. Default: "This is not a valid email address."
-#: ./config.py:60
-msgid "err_isemailaddress_text"
-msgstr ""
-
-#. Default: "This is not a valid list of email addresses (separated by commas)."
-#: ./config.py:68
-msgid "err_isemailaddresslist_text"
-msgstr ""
-
-#. Default: "This is not a valid international phone number."
-#: ./config.py:98
-msgid "err_isintphone_text"
-msgstr ""
-
-#. Default: "This text appears to contain links."
-#: ./config.py:114
-msgid "err_isnotlinkspam_text"
-msgstr ""
-
-#. Default: "This is not a valid us phone number."
-#: ./config.py:90
-msgid "err_isusphone_text"
-msgstr ""
-
-#. Default: "This is not a valid postal code."
-#: ./config.py:106
-msgid "err_iszipcode_text"
-msgstr ""
-
-#. Default: "This value contains unprintable characters."
-#: ./config.py:76
-msgid "err_onlyprintable_text"
-msgstr ""
 
 #. Default: "Field"
 #: ./browser/jsvariables.py:17
@@ -828,7 +802,7 @@ msgstr ""
 "un error al mostrar el formulari"
 
 #. Default: "\n                Check this to display field titles\n                for fields that received no input. Uncheck\n                to leave fields with no input off the list.\n                "
-#: ./content/thanksPage.py:66
+#: ./content/thanksPage.py:64
 msgid "help_includeEmpties_text"
 msgstr ""
 "Activa per incloure els títols\n"
@@ -870,7 +844,7 @@ msgid "help_minval_text"
 msgstr "El formulari no acceptarà valors menors que aquest nombre."
 
 #. Default: "\n                The text to display if the browser reaches this\n                thanks page without submitting a form. Typically, this\n                would direct the reader to the form.\n                "
-#: ./content/thanksPage.py:121
+#: ./content/thanksPage.py:119
 msgid "help_nosubmit_text"
 msgstr ""
 "Text que es mostrarà si el navegador arriba a aquesta pàgina d'agraïment\n"
@@ -943,7 +917,7 @@ msgstr ""
 "un error al mostrar el formulari."
 
 #. Default: "\n                Check this to display input for all fields\n                (except label and file fields). If you check\n                this, the choices in the pick box below\n                will be ignored.\n                "
-#: ./content/thanksPage.py:40
+#: ./content/thanksPage.py:38
 msgid "help_showallfields_text"
 msgstr ""
 "Seleccioni això per a mostrar l'entrada per a tots els camps (excepte\n"
@@ -955,7 +929,7 @@ msgid "help_showcancel_text"
 msgstr "Mostra el botó Reinicia"
 
 #. Default: "\n                Pick the fields whose inputs you'd like to display on\n                the success page.\n                "
-#: ./content/thanksPage.py:54
+#: ./content/thanksPage.py:52
 msgid "help_showfields_text"
 msgstr "Trii els camps les entrades dels quals a vostè li agradaria mostrar en la pàgina d'èxit."
 
@@ -979,7 +953,7 @@ msgid "help_submitlabel_text"
 msgstr "Nom que sortirà al botó que s'utilitzarà per enviar"
 
 #. Default: "The text will be displayed after the field inputs."
-#: ./content/thanksPage.py:102
+#: ./content/thanksPage.py:100
 msgid "help_thanksepilogue_text"
 msgstr "El text que es mostrarà després de les entrades dels camps."
 
@@ -1005,7 +979,7 @@ msgstr ""
 "'thanks-page'."
 
 #. Default: "This text will be displayed above the selected field inputs."
-#: ./content/thanksPage.py:85
+#: ./content/thanksPage.py:83
 msgid "help_thanksprologue_text"
 msgstr "Aquest text es mostrarà abans dels camps d'entrada seleccionats."
 
@@ -1323,7 +1297,7 @@ msgid "label_hidden_text"
 msgstr "Ocult"
 
 #. Default: "Include Empties"
-#: ./content/thanksPage.py:65
+#: ./content/thanksPage.py:63
 msgid "label_includeEmpties_text"
 msgstr "Incloure Buits"
 
@@ -1353,7 +1327,7 @@ msgid "label_minval_text"
 msgstr "Valor mínim acceptat"
 
 #. Default: "No Submit Message"
-#: ./content/thanksPage.py:120
+#: ./content/thanksPage.py:118
 msgid "label_nosubmit_text"
 msgstr "Missatge de no enviat"
 
@@ -1483,7 +1457,7 @@ msgid "label_server_side_text"
 msgstr "Variable del servidor"
 
 #. Default: "Show All Fields"
-#: ./content/thanksPage.py:39
+#: ./content/thanksPage.py:37
 msgid "label_showallfields_text"
 msgstr "Mostrar Tots els Camps"
 
@@ -1493,7 +1467,7 @@ msgid "label_showcancel_text"
 msgstr "Mostrar o no el botó Reinicia"
 
 #. Default: "Show Responses"
-#: ./content/thanksPage.py:53
+#: ./content/thanksPage.py:51
 msgid "label_showfields_text"
 msgstr "Mostrar Respostes"
 
@@ -1514,7 +1488,7 @@ msgid "label_submitlabel_text"
 msgstr "Etiqueta del botó Envia"
 
 #. Default: "Thanks Epilogue"
-#: ./content/thanksPage.py:101
+#: ./content/thanksPage.py:99
 msgid "label_thanksepilogue_text"
 msgstr "Epíleg d'Agraïment"
 
@@ -1529,7 +1503,7 @@ msgid "label_thankspageoverride_text"
 msgstr "Acció personalitzada d'èxit"
 
 #. Default: "Thanks Prologue"
-#: ./content/thanksPage.py:84
+#: ./content/thanksPage.py:82
 msgid "label_thanksprologue_text"
 msgstr "Pròleg d'Agraïment"
 
@@ -1638,11 +1612,6 @@ msgstr "Aquest camp és obligatori."
 msgid "pfg_isSSN"
 msgstr "Això no és un SSN bé format."
 
-#. Default: "This is not a valid url."
-#: ./config.py:83
-msgid "pfg_isURL"
-msgstr ""
-
 #. Default: "This box must be unchecked."
 #: ./content/validationMessages.py:39
 msgid "pfg_isUnchecked"
@@ -1694,7 +1663,7 @@ msgid "pfg_replytofield_title"
 msgstr "La seva adreça de correu electrònic"
 
 #. Default: "<p>No input was received. Please visit the form.</p>"
-#: ./content/thanksPage.py:200
+#: ./content/thanksPage.py:199
 #, fuzzy
 msgid "pfg_thankspage_nosubmitmessage"
 msgstr "<p>No s'ha rebut cap entrada. Si us plau <a title=\"Test Folder\" href=\".\">visita el formulari</a>.</p>"
@@ -1723,46 +1692,6 @@ msgstr "Assumpte"
 #: ./skins/PloneFormGen/prefs_pfg_mtemplate.cpt:95
 msgid "plain_text"
 msgstr "Text simple"
-
-#. Default: "Is an E-Mail Address"
-#: ./config.py:58
-msgid "validator_isemailaddress_text"
-msgstr ""
-
-#. Default: "Is one or more E-Mail Addresses separated by commas"
-#: ./config.py:66
-msgid "validator_isemailaddresslist_text"
-msgstr ""
-
-#. Default: "Is a valid international phone number"
-#: ./config.py:96
-msgid "validator_isintphone_text"
-msgstr ""
-
-#. Default: "Does not contain link spam"
-#: ./config.py:112
-msgid "validator_isnotlinkspam_text"
-msgstr ""
-
-#. Default: "Is a well-formed URL"
-#: ./config.py:82
-msgid "validator_isurl_text"
-msgstr ""
-
-#. Default: "Is a valid US phone number"
-#: ./config.py:88
-msgid "validator_isusphone_text"
-msgstr ""
-
-#. Default: "Is a valid postal code"
-#: ./config.py:104
-msgid "validator_iszipcode_text"
-msgstr ""
-
-#. Default: "Contains only printable characters"
-#: ./config.py:74
-msgid "validator_onlyprintable_text"
-msgstr ""
 
 #. Default: "Checkbox list"
 #: ./content/fields.py:871

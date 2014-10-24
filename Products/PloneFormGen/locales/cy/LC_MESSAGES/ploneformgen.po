@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PloneFormGen 0.2\n"
-"POT-Creation-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"POT-Creation-Date: 2014-02-27 07:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Her Majesty's Government via Team Rubber <matthew.wilkes@teamrubber.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,24 +21,33 @@ msgstr ""
 msgid "A Likert form entry"
 msgstr ""
 
+#. Default: "A captcha field to prevent spam."
 #: ./profiles/default/types/FormCaptchaField.xml
-msgid "A captcha field to prevent spam."
+msgid "A captcha field to prevent spam"
 msgstr ""
 
+#. Default: "A folder which can contain form fields."
 #: ./profiles/default/types/FormFolder.xml
-msgid "A folder which can contain form fields."
+msgid "A folder which can contain form fields"
 msgstr ""
 
 #: ./profiles/default/types/FieldsetFolder.xml
 msgid "A folder which groups form fields as a fieldset."
 msgstr ""
 
+#. Default: "A form action adapter that will e-mail form input."
 #: ./profiles/default/types/FormMailerAdapter.xml
-msgid "A form action adapter that will e-mail form input."
+msgid "A form action adapter that will e-mail form input"
 msgstr ""
 
+#. Default: "A form action adapter that will save form input data and\n         return it in csv- or tab-delimited format."
+#: ./profiles/default/types/FormSaveDataAdapter.xml
+msgid "A form action adapter that will save form input data and return it in csv- or tab-delimited format"
+msgstr ""
+
+#. Default: "A line entry field. This appears as a textarea without wordwrap."
 #: ./profiles/default/types/FormLinesField.xml
-msgid "A line entry field. This appears as a textarea without wordwrap."
+msgid "A line entry field. This appears as a textarea without wordwrap"
 msgstr ""
 
 #. Default: "A string entry field"
@@ -73,8 +82,9 @@ msgstr ""
 msgid "Captcha Field"
 msgstr ""
 
+#. Default: "Checkbox Field"
 #: ./profiles/default/types/FormBooleanField.xml
-msgid "Checkbox Field"
+msgid "Checkbox"
 msgstr ""
 
 #. Default: "Custom Script Adapter"
@@ -82,13 +92,14 @@ msgstr ""
 msgid "Custom Script Adapter"
 msgstr ""
 
+#. Default: "Date/Time Field"
+#: ./profiles/default/types/FormDateField.xml
+msgid "Date/Time"
+msgstr ""
+
 #. Default: "Date/Time Entry Field"
 #: ./profiles/default/types/FormDateField.xml
 msgid "Date/Time Entry Field"
-msgstr ""
-
-#: ./profiles/default/types/FormDateField.xml
-msgid "Date/Time Field"
 msgstr ""
 
 #. Default: "Decimal Number Field"
@@ -303,10 +314,6 @@ msgstr ""
 msgid "Upload"
 msgstr ""
 
-#: ./tools/formGenTool.py:60
-msgid "Validation failed: $id"
-msgstr ""
-
 #. Default: "Whole Number Field"
 #: ./profiles/default/types/FormIntegerField.xml
 msgid "Whole Number Field"
@@ -355,41 +362,6 @@ msgstr ""
 #. Default: "Mark this field as a value to be injected into therequest form for use by action adapters and is notmodifiable by or exposed to the client."
 #: ./content/fieldsBase.py:253
 msgid "description_server_side_text"
-msgstr ""
-
-#. Default: "This is not a valid email address."
-#: ./config.py:60
-msgid "err_isemailaddress_text"
-msgstr ""
-
-#. Default: "This is not a valid list of email addresses (separated by commas)."
-#: ./config.py:68
-msgid "err_isemailaddresslist_text"
-msgstr ""
-
-#. Default: "This is not a valid international phone number."
-#: ./config.py:98
-msgid "err_isintphone_text"
-msgstr ""
-
-#. Default: "This text appears to contain links."
-#: ./config.py:114
-msgid "err_isnotlinkspam_text"
-msgstr ""
-
-#. Default: "This is not a valid us phone number."
-#: ./config.py:90
-msgid "err_isusphone_text"
-msgstr ""
-
-#. Default: "This is not a valid postal code."
-#: ./config.py:106
-msgid "err_iszipcode_text"
-msgstr ""
-
-#. Default: "This value contains unprintable characters."
-#: ./config.py:76
-msgid "err_onlyprintable_text"
 msgstr ""
 
 #. Default: "Field"
@@ -692,7 +664,7 @@ msgid "help_headerInjection_text"
 msgstr ""
 
 #. Default: "\n                Check this to display field titles\n                for fields that received no input. Uncheck\n                to leave fields with no input off the list.\n                "
-#: ./content/thanksPage.py:66
+#: ./content/thanksPage.py:64
 msgid "help_includeEmpties_text"
 msgstr ""
 
@@ -722,7 +694,7 @@ msgid "help_minval_text"
 msgstr ""
 
 #. Default: "\n                The text to display if the browser reaches this\n                thanks page without submitting a form. Typically, this\n                would direct the reader to the form.\n                "
-#: ./content/thanksPage.py:121
+#: ./content/thanksPage.py:119
 msgid "help_nosubmit_text"
 msgstr ""
 
@@ -780,7 +752,7 @@ msgid "help_sender_override_text"
 msgstr ""
 
 #. Default: "\n                Check this to display input for all fields\n                (except label and file fields). If you check\n                this, the choices in the pick box below\n                will be ignored.\n                "
-#: ./content/thanksPage.py:40
+#: ./content/thanksPage.py:38
 msgid "help_showallfields_text"
 msgstr ""
 
@@ -789,7 +761,7 @@ msgid "help_showcancel_text"
 msgstr ""
 
 #. Default: "\n                Pick the fields whose inputs you'd like to display on\n                the success page.\n                "
-#: ./content/thanksPage.py:54
+#: ./content/thanksPage.py:52
 msgid "help_showfields_text"
 msgstr ""
 
@@ -808,7 +780,7 @@ msgid "help_submitlabel_text"
 msgstr ""
 
 #. Default: "The text will be displayed after the field inputs."
-#: ./content/thanksPage.py:102
+#: ./content/thanksPage.py:100
 msgid "help_thanksepilogue_text"
 msgstr ""
 
@@ -823,7 +795,7 @@ msgid "help_thankspageoverride_text"
 msgstr ""
 
 #. Default: "This text will be displayed above the selected field inputs."
-#: ./content/thanksPage.py:85
+#: ./content/thanksPage.py:83
 msgid "help_thanksprologue_text"
 msgstr ""
 
@@ -1140,7 +1112,7 @@ msgid "label_hidden_text"
 msgstr ""
 
 #. Default: "Include Empties"
-#: ./content/thanksPage.py:65
+#: ./content/thanksPage.py:63
 msgid "label_includeEmpties_text"
 msgstr ""
 
@@ -1170,7 +1142,7 @@ msgid "label_minval_text"
 msgstr ""
 
 #. Default: "No Submit Message"
-#: ./content/thanksPage.py:120
+#: ./content/thanksPage.py:118
 msgid "label_nosubmit_text"
 msgstr ""
 
@@ -1300,7 +1272,7 @@ msgid "label_server_side_text"
 msgstr ""
 
 #. Default: "Show All Fields"
-#: ./content/thanksPage.py:39
+#: ./content/thanksPage.py:37
 msgid "label_showallfields_text"
 msgstr ""
 
@@ -1310,7 +1282,7 @@ msgid "label_showcancel_text"
 msgstr ""
 
 #. Default: "Show Responses"
-#: ./content/thanksPage.py:53
+#: ./content/thanksPage.py:51
 msgid "label_showfields_text"
 msgstr ""
 
@@ -1331,7 +1303,7 @@ msgid "label_submitlabel_text"
 msgstr ""
 
 #. Default: "Thanks Epilogue"
-#: ./content/thanksPage.py:101
+#: ./content/thanksPage.py:99
 msgid "label_thanksepilogue_text"
 msgstr ""
 
@@ -1346,7 +1318,7 @@ msgid "label_thankspageoverride_text"
 msgstr ""
 
 #. Default: "Thanks Prologue"
-#: ./content/thanksPage.py:84
+#: ./content/thanksPage.py:82
 msgid "label_thanksprologue_text"
 msgstr ""
 
@@ -1455,11 +1427,6 @@ msgstr "Mae'r maes hwn yn ofynnol"
 msgid "pfg_isSSN"
 msgstr ""
 
-#. Default: "This is not a valid url."
-#: ./config.py:83
-msgid "pfg_isURL"
-msgstr ""
-
 #. Default: "This box must be unchecked."
 #: ./content/validationMessages.py:39
 msgid "pfg_isUnchecked"
@@ -1511,7 +1478,7 @@ msgid "pfg_replytofield_title"
 msgstr ""
 
 #. Default: "<p>No input was received. Please visit the form.</p>"
-#: ./content/thanksPage.py:200
+#: ./content/thanksPage.py:199
 msgid "pfg_thankspage_nosubmitmessage"
 msgstr ""
 
@@ -1538,46 +1505,6 @@ msgstr ""
 #. Default: "Plain Text"
 #: ./skins/PloneFormGen/prefs_pfg_mtemplate.cpt:95
 msgid "plain_text"
-msgstr ""
-
-#. Default: "Is an E-Mail Address"
-#: ./config.py:58
-msgid "validator_isemailaddress_text"
-msgstr ""
-
-#. Default: "Is one or more E-Mail Addresses separated by commas"
-#: ./config.py:66
-msgid "validator_isemailaddresslist_text"
-msgstr ""
-
-#. Default: "Is a valid international phone number"
-#: ./config.py:96
-msgid "validator_isintphone_text"
-msgstr ""
-
-#. Default: "Does not contain link spam"
-#: ./config.py:112
-msgid "validator_isnotlinkspam_text"
-msgstr ""
-
-#. Default: "Is a well-formed URL"
-#: ./config.py:82
-msgid "validator_isurl_text"
-msgstr ""
-
-#. Default: "Is a valid US phone number"
-#: ./config.py:88
-msgid "validator_isusphone_text"
-msgstr ""
-
-#. Default: "Is a valid postal code"
-#: ./config.py:104
-msgid "validator_iszipcode_text"
-msgstr ""
-
-#. Default: "Contains only printable characters"
-#: ./config.py:74
-msgid "validator_onlyprintable_text"
 msgstr ""
 
 #. Default: "Checkbox list"
